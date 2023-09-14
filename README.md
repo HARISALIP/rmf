@@ -13,13 +13,13 @@ To run RMF Simulation, execute the following command:
 ```bash
 docker run --network=host -it ghcr.io/open-rmf/rmf_deployment_template/rmf-simulation:latest bash -c "ros2 launch rmf_demos_gz office.launch.xml headless:=1 server_uri:=ws://localhost:8000/_internal"
 
-Step 3: Run RMF Web RMF Server
+## Step 3: Run RMF Web RMF Server
 
 To run RMF Web RMF Server, execute the following command:
 
 docker run --network=host -it ghcr.io/open-rmf/rmf_deployment_template/rmf-web-rmf-server:latest
 
-Step 4: Run RMF Web Dashboard
+## Step 4: Run RMF Web Dashboard
 
 To run RMF Web Dashboard, execute the following command:
 
@@ -27,7 +27,7 @@ docker run -p 3000:80 -it ghcr.io/open-rmf/rmf_deployment_template/rmf-web-dashb
 
 docker run -p 3000:80 -it ghcr.io/open-rmf/rmf_deployment_template/rmf-web-dashboard-local:latest
 
-Step 5: Access the Dashboard
+## Step 5: Access the Dashboard
 
 You can now access the RMF Web Dashboard by opening your web browser and navigating to:
 
